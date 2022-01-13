@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./slide.css">
+    <link rel="stylesheet" href="../../nav.css">
+    <title>Slideshow</title>
+</head>
+<body>
+
+    <div class="nav">
+        <nav>
+          <a href="../../index.html#home">Home</a>
+          <a href="../../index.html#about-me">About me</a>
+          <a href="../../index.html#myCarousel">Interactive-media</a>
+          <a href="../../index.html#myCarousel1">Development</a>
+          <a href="../../index.html#myCarousel2">Design</a>
+          <a href="../../index.html#myCarousel3">Research</a>
+          <a href="../../index.html#myCarousel4">Communication</a>
+          <a href="../../index.html#myCarousel5">Professional-identity</a>
+        </nav>
+      </div>
+
+    <div class="box">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <section class="parallax">
+        <div class="img"></div>
+        <div class="text">
+            <h1>Slideshow</h1>
+            <p> 
+                For my portfolio I wanted to show my progress on some projects, but I didn't want to spread a lot of photos around.
+                That's why I made an efficient slideshow so people can take their time to look and read the descriptions.
+            </p>
+            <div class="arrow">
+                <a href="#eend"><i class="gg-arrow-down-o" ></i></a> 
+            </div>
+        </div>
+    </section> 
+
+<section class="style">
+        <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="./_MG_2824.JPG" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="./_MG_2779.JPG" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="./_MG_2829.JPG" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="./_MG_2845.JPG" style="width:100%">
+                </div>
+
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+                <br>
+            
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+</section>
+
+    <script src="./slide.js"></script>
+    
+</body>
+</html>

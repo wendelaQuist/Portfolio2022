@@ -1,0 +1,100 @@
+section{
+    scroll-snap-align: start;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+.parallax {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-area: "image" "text";
+    justify-content: center;
+}
+
+.img{
+    padding: 7vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
+}
+
+h1{
+    margin: 0vh 10vw 4vh 10vw;
+}
+
+p{
+    margin: 0vh 10vw 0vh 10vw;
+}
+
+.style{
+    background-image: url(./center\ background-01.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.duck{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.duck img{
+    cursor: pointer;
+}
+
+
+video{
+    margin-right: 4vw;
+}
+
+
+.box{
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translate(-50%, -50%);
+}
+
+.box span:nth-child(2){
+    animation-delay: -0.2s;
+}
+
+.box span:nth-child(3){
+    animation-delay: -0.4s;
+}
+
+.box span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid #20160F;
+    border-right: 1px solid #20160F;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}

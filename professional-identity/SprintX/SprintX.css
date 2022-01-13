@@ -1,0 +1,38 @@
+section{
+    scroll-snap-align: start;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+.parallax {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-area: "image" "text";
+    justify-content: center;
+}
+
+.img{
+    padding: 7vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
+}
+
+h1{
+    margin: 0vh 10vw 4vh 10vw;
+}
+
+p{
+    margin: 0vh 10vw 0vh 10vw;
+}

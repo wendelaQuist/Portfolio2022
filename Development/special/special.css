@@ -1,0 +1,72 @@
+section{
+    scroll-snap-align: start;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow a{
+    color: #324b4b;
+}
+
+.parallax {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-area: "image" "text";
+    justify-content: center;
+}
+
+.img{
+    background-image: url(./logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 4vh;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    margin: 0vh 10vw 4vh 10vw;
+    font-family: Helvetica Rounded;
+}
+
+p{
+    margin: 0vh 10vw 0vh 10vw;
+}
+
+.style{
+    background-image: url();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    background-image: url(./socks1.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 4vh;
+}
+
+.image2{
+    background-image: url(./dominos.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 4vh;
+}
+
+
+

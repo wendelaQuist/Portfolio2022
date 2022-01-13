@@ -1,0 +1,119 @@
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow a{
+    color: #324b4b;
+}
+
+section{
+    scroll-snap-align: start;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+.parallax {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-area: "image" "text";
+    justify-content: center;
+}
+
+.img{
+    background-image: url(./lane\ no\ background.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 3vh;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    margin: 0vh 10vw 4vh 10vw;
+    font-family: Helvetica Rounded;
+}
+
+p{
+    margin: 0vh 10vw 0vh 10vw;
+}
+
+.style{
+    display: flex;
+    flex-direction: column;
+}
+
+.mySlides{
+    display: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.slideshow-container{
+    max-width: 50vw;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-container img{
+    border-radius: 18px;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot{
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+    margin: 0 2px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 15vh;
+}
+  
+.active, .dot:hover{
+    background-color: #95b1b0;
+    scale: 1.2;
+}
+  
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+  

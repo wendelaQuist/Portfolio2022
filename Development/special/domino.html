@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./domino.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="navigationbar">
+        <div class="logo">
+            <a href="./dom-overview.html"><img src="./logo.png" height="80px"></a> 
+            <div class="topnav">
+                <div class="topnav-centered">
+                    <a href="#PIZZA'S" class="active">PIZZA'S</a>
+                    <a href="#CRUNCHY CHICKEN">CRUNCHY CHICKEN</a>
+                    <a href="#BIJGERECHTEN">BIJGERECHTEN</a>
+                    <a href="#DESSERTS & DRANKJES">DESSERTS & DRANKJES</a>
+                    <a href="#BETALING"class="betaling" >BETALING</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="app1">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+             <a href="./coupon.html"><img src="./add1.png" style="width:100%"></a>
+            </div>
+            
+            <div class="mySlides fade">
+              <a href="./coupon.html"><img src="./add2.png" style="width:100%"></a>
+            </div>
+            
+            <div class="mySlides fade">
+              <a href="./coupon.html"><img src="./add3.png" style="width:100%"></a>
+            </div>
+
+            <div class="mySlides fade">
+                <a href="./coupon.html"><img src="add4.png" style="width:100%"></a>
+              </div>
+
+            
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span>
+              </div>
+
+            <div class="box">
+                <p>VOER JE COUPONCODE IN{{ message1 }}</p>
+                <input v-model="message" placeholder="Couponcode"><button v-on:click="check">OK</button>
+            </div>
+
+            <div class="coupon">
+                <div class="container">
+                    <h3>BETERE DOMINO'S PIZZA</h3>
+                </div>
+                <img src="./logo.png" alt="Avatar" style="width:100%;">
+                <div class="container" style="background-color:white">
+                    <h2><b>20% OFF YOUR PURCHASE</b></h2> 
+                    <p>{{ code }}</p>
+                </div>
+                <div class="container">
+                    <p>{{ promo }}</p>
+                    <p class="expire">Expires: Jan 03, 2021</p>
+                    <button v-on:click = "rndStr">Klik hier voor je coupons</button>
+                </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./domino.js"></script>
+<script>
+    var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000);
+        }
+</script>
+
+</body>
+</html>
