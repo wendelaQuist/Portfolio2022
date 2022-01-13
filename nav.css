@@ -29,7 +29,7 @@ z-index: 0;
 }
 
 .text{
-  display: flex;
+  display:flex;
   flex-direction: column;
   justify-content: center;
   z-index: 0;
