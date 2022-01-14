@@ -146,7 +146,7 @@ nav{
   position: fixed;
   width: 15px;
   height: 15px;
-  background-color: #324b4b;
+  background-color: #bf856b;
   border-radius: 50%;
   left: 0;
   top: 0;
@@ -160,7 +160,7 @@ nav{
   position: fixed;
   width: 50px;
   height: 50px;
-  background: rgba(50, 75, 75, 0.2);
+  background: rgba(191, 133, 107, 0.2);
   border-radius: 50%;
   left: 0;
   top: 0;
@@ -172,7 +172,7 @@ nav{
 
 .btn:hover ~ .cursor{
   transform: translate(-50%, -50%) scale(5);
-  background-color: #324b4b;
+  background-color: #bf856b;
   opacity: 0.5;
 }
 
