@@ -8,6 +8,7 @@
   z-index: 1;
   list-style: none;
   text-decoration: none;
+  cursor: none;
 }
 
 body{
@@ -28,6 +29,10 @@ h1, h2, h3{
 z-index: 0;
 }
 
+.img{
+  margin: 7vh;
+}
+
 .text{
   display:flex;
   flex-direction: column;
@@ -41,6 +46,14 @@ h1{
 
 p{
   margin: 0vh 10vw 0vh 10vw;
+}
+
+.container h1{
+  margin: 0;
+}
+
+.container p{
+  margin: 0;
 }
 
 .text a{
@@ -111,6 +124,7 @@ nav{
   font-size: 18px;
   letter-spacing: 0.5px;
   padding: 0 10px;
+  cursor: none;
 }
 
 .nav a::after{
@@ -126,4 +140,69 @@ nav{
 
 .nav a:hover::after{
   width: 100%;
+}
+
+.cursor{
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  background-color: #324b4b;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.1s;
+  z-index: 20;
+}
+
+.cursor2{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: rgba(50, 75, 75, 0.2);
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.15s;
+  z-index: 20;
+}
+
+.btn:hover ~ .cursor{
+  transform: translate(-50%, -50%) scale(5);
+  background-color: #324b4b;
+  opacity: 0.5;
+}
+
+.btn:hover ~ .cursor2{
+  opacity: 0;
+}
+
+.btn {
+  cursor: none;
+  transition: 0.15s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.carousel-control-prev{
+  cursor: none;
+  transition: 0.15s;
+}
+
+.carousel-control-prev:hover{
+  transform: scale(2);
+}
+
+.carousel-control-next{
+  cursor: none;
+  transition: 0.15s;
+}
+
+.carousel-control-next:hover{
+  transform: scale(2);
 }

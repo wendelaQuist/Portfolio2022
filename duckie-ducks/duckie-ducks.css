@@ -56,7 +56,11 @@ p{
 }
 
 .duck img{
-    cursor: pointer;
     z-index: 10;
+    transition: 0.15s;
+}
+
+.duck img:hover{
+    transform: scale(1.1);
 }
 
